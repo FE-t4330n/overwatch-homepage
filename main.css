@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  background-image: url('/images/bg-2600.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 40px;
+}
+
+.container .heroCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container .heroCards .heroCard {
+  flex-grow: 1;
+  margin: 4px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: all 0.2s;
+  width: 180px;
+}
+
+.container .heroCards .heroCard:hover {
+  transform: scale(1.15);
+  transition: all 0.2s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.container .heroCards .heroCard .imgBackground {
+  background-color: #ccdbf7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .heroCards .heroCard .imgBackground > img {
+  display: block;
+  width: 115%;
+  height: auto;
+  transform: translateX(-20px);
+}
+
+.container .heroCards .heroCard .rolenName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: 'NanumSquareNeoHeavy';
+}
+
+.container .heroCards .heroCard .rolenName .role img {
+  display: block;
+  padding-right: 8px;
+  width: 24px;
+}
